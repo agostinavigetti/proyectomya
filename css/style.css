@@ -10,7 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 section {
   padding: 120px 0;
 }
@@ -19,12 +18,11 @@ section {
   max-width: 800px;
   margin: 0 auto 60px auto;
   text-align: center;
-} 
-
-body{
-  font-family: 'Roboto', sans-serif;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
 
 h1 {
   width: 745px;
@@ -41,8 +39,7 @@ h2 {
   font-size: 48px;
   font-weight: 100;
   font-weight: bold;
-  color:#000000;
-  
+  color: #000000;
 }
 
 h3 {
@@ -50,12 +47,11 @@ h3 {
   letter-spacing: 1px;
 }
 
-
 p {
   font-size: 24px;
   color: #000000;
-  font-family: 'Roboto', sans-serif;
-  line-height: 28,13px;
+  font-family: "Roboto", sans-serif;
+  line-height: 28, 13px;
 }
 
 .btn-primary {
@@ -72,23 +68,25 @@ p {
   height: 58px;
 }
 
-.nav-item a{
+.nav-item a {
   font-size: 24px;
   margin-left: 20px;
   line-height: 28px;
 }
 
-.navbar-light .navbar-collapse .navbar-nav .nav-item .nav1  {
-  
+.navbar-light .navbar-collapse .navbar-nav .nav-item .nav1 {
   text-decoration: none;
-  color: #FDBF56!important
- }
-
-
+  color: #fdbf56 !important;
+}
 
 /*home*/
 .fondo {
-  background-image: url(../images/fondo.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    ),
+    url(../images/fondo.jpg);
   height: 100vh;
   max-width: 100%;
   background-size: cover;
@@ -100,24 +98,42 @@ p {
 }
 
 /*Servicios index*/
-.img_circulares img{
+.img_circulares img {
   width: 195px;
   height: 176px;
   border-radius: 100%;
 }
-.img_circulares .rotate1{transform: rotate(-17.93deg);}
-.img_circulares .rotate2{transform: rotate(14.36deg);}
+.img_circulares .rotate1 {
+  transform: rotate(-17.93deg);
+}
+.img_circulares .rotate2 {
+  transform: rotate(14.36deg);
+}
 
+/*Page Servicios*/
+.servicios {
+  margin-left: 4rem;
+}
+
+/*slider*/
+.glide__slide .card {
+  width: 18rem;
+}
 /*Footer*/
 footer {
-  background-image: url(../images/fondo.jpg);
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    ),
+    url(../images/fondo.jpg);
   height: 200px;
 }
 
 /*medias queries
 Mobile Query*/
 @media (max-width: 640px) {
-   .fondo h1 {
+  .fondo h1 {
     font-size: 50px;
   }
   .fondo p {
@@ -136,7 +152,25 @@ Mobile Query*/
   p {
     font-size: 20px;
   }
- 
+  /*productos page*/
+  .contactanos {
+    margin-left: 4rem;
+  }
+
+  .glide__slide .card {
+    width: 10rem;
+  }
+
+  /*contactanos- productos y servicios pages*/
+  .contactanosImg {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+  }
+  .contactanosTxt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
 }
-
-
