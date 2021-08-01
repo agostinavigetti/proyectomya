@@ -97,6 +97,11 @@ p {
   align-items: center;
 }
 
+.main_img {
+  width: 373px;
+  height: 345px;
+}
+
 /*Servicios index*/
 .img_circulares img {
   width: 195px;
@@ -135,7 +140,9 @@ Mobile Query*/
 @media (max-width: 640px) {
   .fondo h1 {
     font-size: 50px;
+    width: 80%;
   }
+
   .fondo p {
     font-size: 10px;
     text-align: left;
@@ -152,6 +159,26 @@ Mobile Query*/
   p {
     font-size: 20px;
   }
+  /*INDEX*/
+  .content-center img,
+  .productosImg img {
+    width: 100% !important;
+  }
+  .img_circulares img {
+    width: 100px;
+    height: 100px;
+    margin: 15px 10px;
+  }
+
+  /*productos page*/
+  .contactanos {
+    margin-left: 4rem;
+  }
+
+  .glide__slide .card {
+    width: 10rem;
+  }
+
   /*productos page*/
   .contactanos {
     margin-left: 4rem;
