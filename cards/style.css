@@ -4,7 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 body{
     line-height: 1.5;
@@ -53,15 +53,7 @@ img{
     color: #12263a;
     margin: 1rem 0;
 }
-.product-title::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 4px;
-    width: 80px;
-    background: #12263a;
-}
+
 .product-link{
     text-decoration: none;
     text-transform: uppercase;
@@ -77,9 +69,7 @@ img{
 .product-link:hover{
     opacity: 0.9;
 }
-.product-rating{
-    color: #ffc107;
-}
+
 .product-rating span{
     font-weight: 600;
     color: #252525;
@@ -89,16 +79,7 @@ img{
     font-size: 1rem;
     font-weight: 700;
 }
-.product-price span{
-    font-weight: 400;
-}
-.last-price span{
-    color: #f64749;
-    text-decoration: line-through;
-}
-.new-price span{
-    color: #256eff;
-}
+
 .product-detail h2{
     text-transform: capitalize;
     color: #12263a;
@@ -138,20 +119,20 @@ img{
     outline: 0;
     margin-right: 0.2rem;
     margin-bottom: 1rem;
+    background-color: #256eff;
+    color: #fff;
 }
 .purchase-info input{
     width: 60px;
 }
 .purchase-info .btn{
-    cursor: pointer;
-    color: #fff;
+    width: 176px;
+  height: 46px;
+  border-radius: 98px;
+  font-size: 24px;
+  font-weight: 400;
 }
-.purchase-info .btn:first-of-type{
-    background: #256eff;
-}
-.purchase-info .btn:last-of-type{
-    background: #f64749;
-}
+
 .purchase-info .btn:hover{
     opacity: 0.9;
 }
@@ -177,6 +158,70 @@ img{
     background: #000;
     border-color: transparent;
     color: #fff;
+}
+
+.colors{
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.color{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 10px;
+    border: 5px solid;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.color[color="blue"]{
+    background-color: #2175f5;
+    border-color: #2175f5;
+}
+
+.color[color="red"]{
+    background-color: #f84848;
+    border-color: #f84848;
+}
+
+.color[color="green"]{
+    background-color: #29b864;
+    border-color: #29b864;
+}
+
+.color[color="orange"]{
+    background-color: #ff5521;
+    border-color: #ff5521;
+}
+
+.color[color="black"]{
+    background-color: #444;
+    border-color: #444;
+}
+.size-container{
+    padding: 10px;
+}
+
+.sizes{
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.size{
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #eee;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
 }
 
 @media screen and (min-width: 992px){
