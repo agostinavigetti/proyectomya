@@ -120,6 +120,10 @@ p {
   margin-left: 4rem;
 }
 
+.linkWhatsapp {
+  text-decoration: none;
+}
+
 /*slider*/
 .glide__slide .card {
   width: 18rem;
